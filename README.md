@@ -24,8 +24,6 @@ Training uses K‑Fold cross‑validation with early stopping, and prediction en
 |------|-------------|
 | `MLP-LSTM-train.py` | Training script for both the target model and the curve model. |
 | `MLP-LSTM-prediction.py` | Inference script that loads trained models and makes predictions on new data (numpy arrays or CSV files). |
-| `saved_models/` | Directory where trained models, scalers, and checkpoints are saved. |
-| `results/` | Directory where per‑fold and final prediction results (CSV) are stored. |
 
 ---
 
@@ -35,11 +33,7 @@ Training uses K‑Fold cross‑validation with early stopping, and prediction en
   An Excel file (`.xlsx`) without a header row.  
   The first 24 columns are structural input features.  
   Columns 25 onward contain the 200-point force-displacement curve.
-
-- **Prediction input**: `All-simple.csv`  
-  A CSV file where the first 24 columns are the same 24 structural features.  
-  The file may contain many rows for batch prediction.
-
+  
 ---
 
 ## Requirements
